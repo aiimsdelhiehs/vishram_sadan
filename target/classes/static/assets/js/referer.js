@@ -52,6 +52,7 @@ var contextPath='http://localhost:8080/vishram-sadan';
             $scope.allBookingRequest = response.data;
             setTimeout(function(){
 				new DataTable('#example', {
+					 ordering: false,
 				    initComplete: function () {
 				        this.api()
 				            .columns()
@@ -81,14 +82,14 @@ var contextPath='http://localhost:8080/vishram-sadan';
         });
 
 
-    $scope.filterByStatus = function(status) {
+  /*  $scope.filterByStatus = function(status) {
     $scope.closeData = $scope.allBookingRequest.filter(function(item) {
         return item.status === status;
     });
     $scope.filteredData=  $scope.closeData;
     console.log('Filtered Data:', $scope.closeData);
 };
-   
+   */
 
         $scope.filters = {
             requestId: '',
@@ -418,7 +419,7 @@ var contextPath='http://localhost:8080/vishram-sadan';
 		 alert("Please enter valid priority number"); 
 		 return false;
 	  }
-	  else if(parseInt(priority) >= $scope.filteredData.length){
+	  else if(parseInt(priority) >= $scope.allBookingRequest.pendingBooking.length){
 	     alert("Requested priority number:"+priority+" can't be change updated as waiting list have total requests "+$scope.filteredData.length); 
 		 return false;
 	  }

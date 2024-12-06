@@ -21,45 +21,30 @@
 <meta name="author" content="">
 <link rel="apple-touch-icon"
 	href="assets/images/favicon/apple-touch-icon.png">
-<link rel="icon"
-	href="assets/images/favicon/aiims.png">
+<link rel="icon" href="assets/images/favicon/aiims.png">
 <title>Vishram Sadan | AIIMS Delhi</title>
 <!-- Custom styles for this template -->
-<link href="assets/css/base.css" rel="stylesheet"
+<link href="assets/css/base.css" rel="stylesheet" media="all">
+<link href="assets/css/base-responsive.css" rel="stylesheet" media="all">
+<link href="assets/css/grid.css" rel="stylesheet" media="all">
+<link href="assets/css/font.css" rel="stylesheet" media="all">
+<link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet"
 	media="all">
-<link href="assets/css/base-responsive.css"
-	rel="stylesheet" media="all">
-<link href="assets/css/grid.css" rel="stylesheet"
-	media="all">
-<link href="assets/css/font.css" rel="stylesheet"
-	media="all">
-<link href="assets/fontawesome-free/css/all.min.css"
-	rel="stylesheet" media="all">
-<link
-	href="assets/vendor/bootstrap/css/bootstrap.min.css"
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
-<link
-	href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
 	rel="stylesheet">
-<link href="assets/css/flexslider.css"
-	rel="stylesheet" media="all">
-<link href="assets/css/megamenu.css" rel="stylesheet"
-	media="all" />
-<link href="assets/css/print.css" rel="stylesheet"
-	media="print" />
-<link href="assets/boxicons/css/boxicons.min.css"
-	rel="stylesheet">
+<link href="assets/css/flexslider.css" rel="stylesheet" media="all">
+<link href="assets/css/megamenu.css" rel="stylesheet" media="all" />
+<link href="assets/css/print.css" rel="stylesheet" media="print" />
+<link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
 <!-- Theme styles for this template -->
-<link href="assets/css/megamenu.css" rel="stylesheet"
-	media="all" />
-<link href="theme/css/site.css" rel="stylesheet"
-	media="all">
-<link href="theme/css/site-responsive.css"
-	rel="stylesheet" media="all">
-<link href="theme/css/ma5gallery.css"
-	rel="stylesheet" type="text/css">
-<link href="theme/css/print.css" rel="stylesheet"
-	type="text/css" media="print">
+<link href="assets/css/megamenu.css" rel="stylesheet" media="all" />
+<link href="theme/css/site.css" rel="stylesheet" media="all">
+<link href="theme/css/site-responsive.css" rel="stylesheet" media="all">
+<link href="theme/css/ma5gallery.css" rel="stylesheet" type="text/css">
+<link href="theme/css/print.css" rel="stylesheet" type="text/css"
+	media="print">
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
 
@@ -93,10 +78,10 @@
 				<h1 class="logo">
 					<a href="home" title="Home" rel="home" class="header_logo"
 						id="logo"> <img class="national_emblem"
-						src="assets/images/aiims4.png"
-						alt="national emblem">
-						<p>अ.भा.आ.सं -विश्राम सदन</p> <span class="vishram"> AIIMS - Vishram Sadan</span>
-						
+						src="assets/images/aiims4.png" alt="national emblem">
+						<p>अ.भा.आ.सं -विश्राम सदन</p> <span class="vishram"> AIIMS
+							- Vishram Sadan</span>
+
 					</a>
 				</h1>
 				<div class="header-right clearfix">
@@ -106,185 +91,200 @@
 							<a class="sw-logo" target="_blank"
 								href="https://swachhbharat.mygov.in/"
 								title="Swachh Bharat, External link that open in a new windows"><img
-								src="assets/images/swach-bharat.png"
-								alt="Swachh Bharat"></a>
+								src="assets/images/swach-bharat.png" alt="Swachh Bharat"></a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 		</section>
-		        <section class="dark-blue">
-            <div class="container ">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                        <div class="container-fluid ">
-                        <a class="navbar-brand text-orange" href="index"><i class="fa fa-home" style="font-size:15px"></i></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <i class="fa fa-bars" aria-hidden="true"></i>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ">
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" href="aboutus">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white " href="contact">Contact Us</a>
-                                </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link text-white active" href="rate">Rate List</a>
-                                </li>
-                                </ul>
-                                <ul class="navbar-nav ">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-white " href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">Useful Links</a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item text-orange" href="https://cfapplication.aiims.edu/santusht/otp_auth" target="_blank">Santust Portal</a></li>
-                                        <li><a class="dropdown-item text-orange" href="https://ors.gov.in" target="_blank">Online Appointment</a></li>
-                                        <li><a class="dropdown-item text-orange" href="https://www.aiims.edu/index.php?lang=en" target="_blank">AIIMS Official Website</a></li>
-                                    </ul>
-                                </li>
-                                </ul>
-                              
-                                
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </section>
-    
+		<section class="dark-blue">
+			<div class="container ">
+				<nav class="navbar navbar-expand-lg navbar-dark">
+					<div class="container-fluid ">
+						<a class="navbar-brand text-orange" href="index"><i
+							class="fa fa-home" style="font-size: 15px"></i></a>
+						<button class="navbar-toggler" type="button"
+							data-bs-toggle="collapse" data-bs-target="#navbarNav"
+							aria-controls="navbarNav" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav ">
+								<li class="nav-item"><a class="nav-link text-white"
+									href="aboutus">About Us</a></li>
+								<li class="nav-item"><a class="nav-link text-white "
+									href="contact">Contact Us</a></li>
+								<li class="nav-item"><a class="nav-link text-white active"
+									href="rate">Rate List</a></li>
+							</ul>
+							<ul class="navbar-nav ">
+								<li class="nav-item dropdown"><a
+									class="nav-link dropdown-toggle text-white " href="#"
+									id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+									aria-expanded="false">Useful Links</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item text-orange"
+											href="https://cfapplication.aiims.edu/santusht/otp_auth"
+											target="_blank">Santust Portal</a></li>
+										<li><a class="dropdown-item text-orange"
+											href="https://ors.gov.in" target="_blank">Online
+												Appointment</a></li>
+										<li><a class="dropdown-item text-orange"
+											href="https://www.aiims.edu/index.php?lang=en"
+											target="_blank">AIIMS Official Website</a></li>
+									</ul></li>
+							</ul>
+
+
+						</div>
+					</div>
+				</nav>
+			</div>
+		</section>
+
 
 	</header>
-	
-   <section class="breadcrumbs">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2><i class="fa fa-rupee"></i> Rate List</h2>
-          <ol>
-            <li><a href="index">Home</a></li>
-            <li>Rate List</li>
-          </ol>
-        </div>
-      </div>
-      
-    </section>
+
+	<section class="breadcrumbs">
+		<div class="container">
+			<div class="d-flex justify-content-between align-items-center">
+				<h2>
+					<i class="fa fa-rupee"></i> Rate List
+				</h2>
+				<ol>
+					<li><a href="index">Home</a></li>
+					<li>Rate List</li>
+				</ol>
+			</div>
+		</div>
+
+	</section>
 
 
 
-   <section class="container my-5">
-  <div class="container-fluid">
-    <div class="card card-shadow p-3">
-        <div class="card-header">
-            <div class="row">
-                <div class="col-lg-9">
-                    <h4 class="font-weight-bold">Rate List</h4>
-                </div>
-               
-            </div>
-        </div>
-        <div class="card-body">
-           <div class="row">
-             
-             <div class="col-lg-12 table-responsive">
-                  <table class="display" >
-        <thead>
-            <tr>
-                <th>S No.</th>
-                    <th>Room Category</th>
-                    <th>Price</th>
-                    <th>Max. Person Allowed</th>
-                    
-            </tr>
-               
-        </thead>
-        <tbody>
-             <tr >
-                    <td>1.</td>
-                    <td>Dormitory</td>
-                    <td>20</td>
-                    <td>1</td>               
-                </tr>
-                    <tr >
-                    <td>2.</td>
-                    <td>Semi Dormitory</td>
-                    <td>40</td>
-                    <td>1</td>               
-                </tr>
-                    <tr >
-                    <td>3.</td>
-                    <td>Single Bedded Room</td>
-                    <td>100</td>
-                    <td>3</td>               
-                </tr>
-                    <tr >
-                    <td>4.</td>
-                    <td>2 Beded Room</td>
-                    <td>150</td>
-                    <td>2</td>               
-                </tr>
-                    <tr >
-                    <td>5.</td>
-                    <td>3 Beded Room</td>
-                    <td>225</td>
-                    <td>3</td>               
-                </tr>
-        </tbody>
-    
-    </table>             </div>
-           </div>
-        </div>
-    </div>
-
-      </div>
-      <div ng-app="VishramSadanApp" ng-controller="VishramSadanController">
-      <div class="row mb-3">
-					  <div class="col-lg-9">
-					     <div class="card shadow b-1 mx-3 p-2">
-							<div class="card-body">
-							  <h4>Month wise ticket closing report</h4><br/>
-    <canvas id="chart-container" class="w-100" height="200">"></canvas>
-    </div>
+	<section class="container my-5">
+		<div class="container-fluid">
+			<div class="card card-shadow p-3">
+				<div class="card-header">
+					<div class="row">
+						<div class="col-lg-9">
+							<h4 class="font-weight-bold">Rate List</h4>
 						</div>
-					  </div>
-</div>
-</div>
-    </section>
+
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="row">
+
+						<div class="col-lg-12 table-responsive">
+							<table class="display">
+								<thead>
+									<tr>
+										<th>S No.</th>
+										<th>Room Category</th>
+										<th>Price</th>
+										<th>Max. Person Allowed</th>
+
+									</tr>
+
+								</thead>
+								<tbody>
+									<tr>
+										<td>1.</td>
+										<td>Dormitory</td>
+										<td>20</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>2.</td>
+										<td>Semi Dormitory</td>
+										<td>40</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>3.</td>
+										<td>Single Bedded Room</td>
+										<td>100</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td>4.</td>
+										<td>2 Beded Room</td>
+										<td>150</td>
+										<td>2</td>
+									</tr>
+									<tr>
+										<td>5.</td>
+										<td>3 Beded Room</td>
+										<td>225</td>
+										<td>3</td>
+									</tr>
+								</tbody>
+
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div ng-app="VishramSadanApp" ng-controller="VishramSadanController">
+			<div class="row justify-content-center mb-3">
+				<div class="col-lg-9">
+					<div class="card shadow b-1 mx-3 p-2">
+						<div class="card-body" style="border:1px solid red;">
+							<h4>Month wise ticket closing report</h4>
+							<br />
+							<canvas class="w-100" id="myChart" width="800" height="400"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
-	    <footer class="wrapper footer-wrapper mt-auto">
-        <div class="footer-top-wrapper">
-           <div class="container common-container four_content footer-top-container">
-              <ul>
-                 <li><a href="#">Website Policies</a></li>
-                 <li><a href="#">Help</a></li>
-                 <li><a href="contact">Contact Us</a></li>
-                 <li><a href="term">Terms and Conditions </a></li>
-                 <li><a href="#">Feedback</a></li>
-                 <li><a href="#">Web Information Manager</a></li>
-                 <li><a href="#">Visitor Analytics</a></li>
-                 <li><a href="#">FAQ</a></li>
-                 <li><a href="#">Disclaimer</a></li>
-              </ul>
-           </div>
-        </div>
-        <div class="footer-bottom-wrapper">
-           <div class="container common-container four_content footer-bottom-container">
-              <div class="footer-content clearfix">
-                 <div class="copyright-content"> Website Content Managed,Designed, Developed and Hosted by <a target="_blank" title="NIC, External Link that opens in a new window" href="https://www.aiims.edu/index.php?lang=en"><strong>All India Institute Of medical Sciences</strong></a><strong> ( AIIMS)</strong> </div>
-                 
-              </div>
-           </div>
-        </div>
-     </footer>
+	<footer class="wrapper footer-wrapper mt-auto">
+		<div class="footer-top-wrapper">
+			<div
+				class="container common-container four_content footer-top-container">
+				<ul>
+					<li><a href="#">Website Policies</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="contact">Contact Us</a></li>
+					<li><a href="term">Terms and Conditions </a></li>
+					<li><a href="#">Feedback</a></li>
+					<li><a href="#">Web Information Manager</a></li>
+					<li><a href="#">Visitor Analytics</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Disclaimer</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom-wrapper">
+			<div
+				class="container common-container four_content footer-bottom-container">
+				<div class="footer-content clearfix">
+					<div class="copyright-content">
+						Website Content Managed,Designed, Developed and Hosted by <a
+							target="_blank"
+							title="NIC, External Link that opens in a new window"
+							href="https://www.aiims.edu/index.php?lang=en"><strong>All
+								India Institute Of medical Sciences</strong></a><strong> ( AIIMS)</strong>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
-         
+
 
 	<!--/.footer-wrapper-->
-	<script
-		src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<!--/.footer-wrapper-->
 	<!-- jQuery v1.11.1 -->
 	<script
@@ -305,12 +305,12 @@
 	<script src="assets/js/framework.js"></script>
 	<script src="assets/js/jquery.flexslider.js"></script>
 	<script src="assets/js/font-size.js"></script>
-	 <script src="assets/js/index.js"></script>
+	<script src="assets/js/index.js"></script>
 	<script src="assets/js/swithcer.js"></script>
 	<script src="theme/js/ma5gallery.js"></script>
 	<script src="assets/js/chart.js"></script>
 	<script src="assets/js/angular.min.js"></script>
-    
+
 	<script src="assets/js/megamenu.js"></script>
 	<script src="theme/js/easyResponsiveTabs.js"></script>
 	<script src="theme/js/custom.js"></script>

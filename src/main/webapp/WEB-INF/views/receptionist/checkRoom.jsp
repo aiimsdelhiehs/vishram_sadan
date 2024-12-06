@@ -326,7 +326,8 @@ body {
 															category))) + '/' + getRoomsOfCategory(vishramSadan,
 															category).length}}</p>
 													</div>
-													<div class="col-lg-10 d-flex min-height-100">
+
+					<div class="col-lg-10 d-flex min-height-100">
 														<div
 															ng-repeat="room in getRoomsOfCategory(vishramSadan, category)">
 															<button

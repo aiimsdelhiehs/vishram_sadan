@@ -7,49 +7,77 @@ $scope.apiCalling = true;
 		 })
 		 .then(function(response){
 			 console.log(response);
-			 const data = response.data;
-                        // Process data for Chart.js
-                        const { categoryNames, sadanNames, availableData, notAvailableData } = processDataForChart(data);
-                        
-                        // Configure and create the Chart
-                        const ctx = document.getElementById('chart-container').getContext('2d');
-                        const chartConfig = {
-                            type: 'bar',
-                            data: {
-                                labels: sadanNames,
-                                datasets: [
-                                    ...categoryNames.map((catName, index) => ({
-                                        label: `${catName} Available`,
-                                        data: availableData[index],
-                                        backgroundColor: 'rgba(75, 192, 192, 0.5)',
-                                        borderColor: 'rgba(75, 192, 192, 1)',
-                                        borderWidth: 1
-                                    })),
-                                    ...categoryNames.map((catName, index) => ({
-                                        label: `${catName} Not Available`,
-                                        data: notAvailableData[index],
-                                        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-                                        borderColor: 'rgba(255, 99, 132, 1)',
-                                        borderWidth: 1
-                                    }))
-                                ]
-                            },
-                            options: {
-                                responsive: true,
-                                scales: {
-                                    x: {
-                                        stacked: true
-                                    },
-                                    y: {
-                                        beginAtZero: true,
-                                        stacked: true
-                                    }
-                                }
-                            }
-                        };
+			 const ctx = document.getElementById('myChart').getContext('2d');
+        
+        var allAvailableData = new Map();
+        var backgroundColors = ['rgba(255, 99, 132, 0.5)','rgba(54, 162, 235, 0.5)'];
+        var borderColors = ['rgba(255, 99, 132, 1)','rgba(54, 162, 235, 1)'];
+        var allLabels = [];
+        for(var i=0;i<response.data.length; i++){
+			if(!allAvailableData.has(response.data[i].sadanName)){
+				var availableData = new Map();
+				for(var j=0; j<response.data[i].categories.length; j++){
+					if(!availableData.has(response.data[i].categories[j].categoryName)){ 
+						availableData.set(response.data[i].categories[j].categoryName,response.data[i].categories[j].available);
+					}
+				}
+				allAvailableData.set(response.data[i].sadanName,availableData);
+			}
+		}
+		//console.log(sadans);
+		console.log(allAvailableData);
+		console.log(Array.from(allAvailableData.keys()));
+		var dataSetArr = [];
+		var index=0;
+		for (const [sadan, availableData] of allAvailableData.entries()) {
+		     var dataArr = [];
+		     for (const [categoryName, data] of availableData.entries()) { 
+				  if(!allLabels.includes(categoryName)){
+					  allLabels.push(categoryName);
+				  }
+				  dataArr.push(data);
+			 }
+			 dataSetArr.push({
+                    label: sadan,
+                    data: dataArr, // Dataset 1 values
+                    backgroundColor: backgroundColors[index], // Bar color
+                    borderColor: borderColors[index],
+                    borderWidth: 1
+              });
+             index++;
+		}
+        // Sample data
+        const data = {
+            labels: allLabels, // Your labels
+            datasets: dataSetArr
+        };
 
-                        // Render the chart
-                        new Chart(ctx, chartConfig);
+        // Chart configuration
+        const config = {
+            type: 'bar',
+            data: data,
+            options: {
+                indexAxis: 'x', // Horizontal bars
+                scales: {
+                    x: {
+                        beginAtZero: true // Start X-axis at zero
+                    }
+                },
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top' // Legend position
+                    },
+                    title: {
+                        display: true,
+                        text: 'Horizontal Bar Chart with Two Bars per Label'
+                    }
+                }
+            }
+        };
+
+        // Render the chart
+        new Chart(ctx, config);
 
 			 },function(error){
 			 console.log(error);
